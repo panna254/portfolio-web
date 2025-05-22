@@ -31,4 +31,21 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Contact form validation and success handling
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            if (contactForm.checkValidity()) {
+                // Show success message
+                document.getElementById('contactSuccess').classList.remove('d-none');
+                contactForm.reset();
+                contactForm.classList.remove('was-validated');
+            } else {
+                contactForm.classList.add('was-validated');
+            }
+        }, false);
+    }
+
 });
