@@ -44,7 +44,7 @@
                         <span class="text-primary">Onyango</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Toll Estate · Ruiru, Kenya·+254717175444·
+                        Ruiru, Kenya·+254719463183·
                         <a href="mailto:oketchonyango@gmail.com">oketchonyango@gmail.com</a>
                     </div>
                     <p class="lead mb-5">Adaptable and technically proficient Web Developer with strong experience in backend 
@@ -53,9 +53,9 @@
                         Passionate about using technology to solve real-world problems and support sustainable 
                         development.</p>
                     <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/moses-oketch-6b4586366" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://www.instagram.com/ujuziwebske/" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
                         <a class="social-icon" href="https://github.com/panna254" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://x.com/mansahmusah25" target="_blank" rel="noopener" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                        <a class="social-icon" href="https://wa.me/254719463183" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         <a class="social-icon" href="https://www.facebook.com/profile.php?id=100089248621992" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
@@ -144,7 +144,6 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Starehe Boys Technical Training Institute, Nairobi, Kenya</h3>
                             <div class="subheading mb-3">Certificate in Computer Applications & Financial Accounting</div>
-                            <p>Distinction</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">May 2022 -July 2022</span></div>
                     </div>
@@ -152,9 +151,48 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Starehe Boys Centre and School, Nairobi, Kenya</h3>
                             <div class="subheading mb-3">Kenya Certificate of Secondary Education (KCSE)</div>
-                            <p>A - (MINUS)</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Jan 2018 - April 2022</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="row">
+                        <!-- Lipia Online -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lipia Online</h5>
+                                    <p class="card-text">A comprehensive online platform for global financial services and payments for all Africans.</p>
+                                    <a href="https://lipia.online" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- MinwaJayne Foundation -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">MinwaJayne Foundation by LKA</h5>
+                                    <p class="card-text">A foundation focused on community engagement and development projects.</p>
+                                    <a href="https://minwajaynefoundationbylka.org" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- AngaMusa Weather App -->
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">AngaMusa Weather App</h5>
+                                    <p class="card-text">A modern weather application providing real-time weather updates and forecasts.</p>
+                                    <a href="https://angamusa.netlify.app" class="btn btn-primary">View Project</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -242,7 +280,8 @@
             <section class="resume-section" id="contact">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Contact Me</h2>
-                    <form id="contactForm" novalidate>
+                    <form id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+                        <input type="hidden" name="form-name" value="contact" />
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="name" class="form-label">Name</label>
@@ -266,6 +305,8 @@
                             </div>
                             <div class="col-12 text-end">
                                 <button class="btn btn-primary px-5 py-2 mt-3" type="submit">Send Message</button>
+                                <input type="hidden" name="bot-field" />
+                                <input type="text" name="bot-field" class="form-control" style="display: none;" />
                             </div>
                         </div>
                     </form>
